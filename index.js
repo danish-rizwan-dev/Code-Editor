@@ -5,7 +5,7 @@ $('#runBtn').on('click', function() {
     const js =`<script>${$('#jsCode').val()}</script>`;
     const css =`<style>${$('#cssCode').val()}</style>`;
     
-    let combinedCode = html + js + css ;
-
+    let combinedCode = html + css ;
     $('#preview').html(combinedCode);
+    eval(jssStr);
 });
