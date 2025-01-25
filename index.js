@@ -1,11 +1,9 @@
-
-
 $('#runBtn').on('click', function() {
     const html = $('#htmlCode').val();  
-    const js =`<script>${$('#jsCode').val()}</script>`;
-    const css =`<style>${$('#cssCode').val()}</style>`;
+    const js =$('#jsCode').val();
+    const css =$('#cssCode').val();
     
-    let combinedCode = html + css ;
-    $('#preview').html(combinedCode);
-    eval(jssStr);
+    $('#style').html(css);
+    $('#preview').html(html);
+    eval(js);
 });
